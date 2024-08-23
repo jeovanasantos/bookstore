@@ -1,3 +1,4 @@
+import './style.css'
 
 const textoOpcoes = ['Categorias','Minha Estante','Favorito']
 
