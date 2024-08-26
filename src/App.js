@@ -1,18 +1,18 @@
-import './App.css';
-import Logo from './componentes/Logo'
-import OpcoesHeader from './componentes/OpcoesHeader';
-import IconesHeader from './componentes/IconesHeader';
+import Header from './componentes/header';
+import styled from "styled-components";
+
+const AppContainer = styled.div`
+    width: 100vw;
+    height: 100vh;
+    background: #363636;
+  
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Logo></Logo>
-        <OpcoesHeader></OpcoesHeader>
-        <IconesHeader></IconesHeader>
-      </header>
-      
-    </div>
+    <AppContainer>
+      <Header></Header>
+    </AppContainer>
   );
 }
 
