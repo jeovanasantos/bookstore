@@ -29,7 +29,8 @@ function Pesquisa() {
     <PesquisaContainer>
       <Titulo>Já sabe por onde começar? </Titulo>
       <Subtitulo>Encontre seu livro em nova estante.</Subtitulo>
-      <Input placeholder="Digite a sua proxima leitura" onBlur={evento =>setTextoDigitado(evento.target.value)}/>
+      <Input placeholder="Digite a sua proxima leitura" 
+      onBlur={evento =>setTextoDigitado(evento.target.value)}/>
       <p>{textoDigitado}</p>
     </PesquisaContainer>
   );
