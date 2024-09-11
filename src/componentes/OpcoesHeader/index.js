@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Opcoes = styled.ul`
   display: flex;
@@ -16,14 +17,14 @@ const Opcao = styled.li`
   list-style: none;
 `;
 
-const textoOpcoes = ["Categorias", "Minha Estante", "Favoritos"];
+const textoOpcoes = ["Categorias", "Estante", "Favoritos"];
 
 function OpcoesHeader() {
   return (
     <Opcoes>
       {textoOpcoes.map((texto) => (
         <Opcao>
-          <p>{texto}</p>
+          <Link to={`/${texto}`}><p>{texto}</p></Link>
         </Opcao>
       ))}
     </Opcoes>
