@@ -16,7 +16,7 @@ const Opcao = styled.li`
   list-style: none;
 `;
 
-const textoOpcoes = ["Categorias", "Minha Estante", "Favorito"];
+const textoOpcoes = ["Categorias", "Minha Estante", "Favoritos"];
 
 function OpcoesHeader() {
   return (
